@@ -1,0 +1,19 @@
+[Unit]
+Description=GPU Idle Monitor
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/nvidler
+Restart=always
+# User=yourusername
+Environment="PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+Environment="IDLE_TIME_THRESHOLD=300"
+Environment="WARNING_ONLY=true"
+Environment="TARGET_WORKLOADS=python,tensorflow,cuda,pytorch"
+Environment="WHITELIST=whitelisted_process,whitelisted_container,nvidia-smi,nvidler.sh"
+Environment="LOG_FILE=/var/log/gpu_idle_monitor.log"
+Environment="SLEEP_INTERVAL=60"
+Environment="DOCKER=true"
+
+[Install]
+WantedBy=multi-user.target
