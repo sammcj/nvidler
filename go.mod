@@ -2,7 +2,7 @@ module nvidler
 
 go 1.21.4
 
-require github.com/docker/docker v24.0.6+incompatible
+require github.com/docker/docker v24.0.7+incompatible
 
 require (
 	github.com/Microsoft/go-winio v0.6.1 // indirect
