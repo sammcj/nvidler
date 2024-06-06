@@ -1,6 +1,6 @@
 module nvidler
 
-go 1.21.11
+go 1.22.4
 
 require github.com/docker/docker v24.0.9+incompatible
 
